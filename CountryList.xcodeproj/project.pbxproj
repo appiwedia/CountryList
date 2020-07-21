@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		30C0F22D24C6F07000000742 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30C0F22C24C6F07000000742 /* Assets.xcassets */; };
 		30C0F23024C6F07000000742 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30C0F22F24C6F07000000742 /* Preview Assets.xcassets */; };
 		30C0F23324C6F07000000742 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30C0F23124C6F07000000742 /* LaunchScreen.storyboard */; };
+		30C0F23C24C6F0B800000742 /* CountryKit in Frameworks */ = {isa = PBXBuildFile; productRef = 30C0F23B24C6F0B800000742 /* CountryKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30C0F23C24C6F0B800000742 /* CountryKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +93,9 @@
 			dependencies = (
 			);
 			name = CountryList;
+			packageProductDependencies = (
+				30C0F23B24C6F0B800000742 /* CountryKit */,
+			);
 			productName = CountryList;
 			productReference = 30C0F22324C6F06C00000742 /* CountryList.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +124,9 @@
 				Base,
 			);
 			mainGroup = 30C0F21A24C6F06C00000742;
+			packageReferences = (
+				30C0F23A24C6F0B800000742 /* XCRemoteSwiftPackageReference "CountryKit" */,
+			);
 			productRefGroup = 30C0F22424C6F06C00000742 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -342,6 +350,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		30C0F23A24C6F0B800000742 /* XCRemoteSwiftPackageReference "CountryKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alemar11/CountryKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		30C0F23B24C6F0B800000742 /* CountryKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 30C0F23A24C6F0B800000742 /* XCRemoteSwiftPackageReference "CountryKit" */;
+			productName = CountryKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 30C0F21B24C6F06C00000742 /* Project object */;
 }

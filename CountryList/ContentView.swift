@@ -7,10 +7,23 @@
 //
 
 import SwiftUI
+import CountryKit
 
 struct ContentView: View {
+    
+    var counties = CountryKit().countries
+    
     var body: some View {
-        Text("Hello, World!")
+        NavigationView {
+            List(counties, id: \.countryCode) { country in
+                HStack {
+                    Text(country.emoji)
+                    Text(country.name)
+                    Spacer()
+                    Text("+\(country.countryCode ?? 0)")
+                }
+            }.navigationBarTitle("Pays")
+        }
     }
 }
 
